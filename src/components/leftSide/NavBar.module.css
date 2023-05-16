@@ -1,0 +1,13 @@
+.navBar {
+    grid-area: navBar;
+    background-color: blueviolet;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:active {
+    color: red;
+  }
