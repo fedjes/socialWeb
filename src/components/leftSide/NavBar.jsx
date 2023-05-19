@@ -8,7 +8,7 @@ const NavBar = () => {
                 <a href="/profile">Profile</a>
             </div>
             <div className={s.navBarItem}>
-                <a href="/message">Message</a>
+                <a href="/messages">Messages</a>
             </div>
             <div className={s.navBarItem}>
                 <a href="/music">Music</a>

@@ -9,6 +9,7 @@
   grid-template-columns: 2fr 10fr;
 }
 
-
-
-
+.appWrapperContent {
+  grid-area: profile;
+  background-color: yellow;
+}
