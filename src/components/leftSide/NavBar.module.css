@@ -3,11 +3,18 @@
     background-color: blueviolet;
   }
 
-  a {
+   .navBarItem a {
     text-decoration: none;
     color: white;
+  } 
+ 
+
+  .activeLink {
+    color: rgb(43, 12, 179);
   }
 
-  a:active {
-    color: red;
-  }
+  
+
+
+
+
