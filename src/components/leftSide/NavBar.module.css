@@ -9,11 +9,9 @@
   } 
  
 
-  .activeLink {
+  .active:active {
     color: rgb(43, 12, 179);
   }
-
-  
 
 
 

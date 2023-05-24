@@ -4,11 +4,12 @@ import React from 'react';
 import Header from './components/header/Header';
 import NavBar from './components/leftSide/NavBar';
 import Profile from './components/contentRightSide/Profile';
-import Dialogs from './components/Messages/Messages';
+import Dialogs from './components/contentRightSide/Messages/Messages';
 import Music from './components/contentRightSide/Music/Music';
 import Friends from './components/contentRightSide/Friends/Friends';
 import News from './components/contentRightSide/News/News';
 import Settings from './components/contentRightSide/Settings/Settings';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = () => {
