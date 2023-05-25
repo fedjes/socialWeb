@@ -12,7 +12,8 @@ import Settings from './components/contentRightSide/Settings/Settings';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-const App = () => {
+const App = (props) => {
+
   return (
     <BrowserRouter>
       <div className='appWrapper'>
@@ -20,8 +21,8 @@ const App = () => {
         <NavBar />
         <div className='appWrapperContent'>
           <Routes>
-            <Route path='/messages' element={<Dialogs />} />
-            <Route path='/profile' element={<Profile />} />
+            <Route path='/messages' element={<Dialogs state={props.state.messagesPage} />} />
+            <Route path='/profile' element={<Profile state={props.state.profilePage.pData} />} />
             <Route path='/music' element={<Music />} />
             <Route path='/friends' element={<Friends />} />
             <Route path='/news' element={<News />} />

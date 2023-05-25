@@ -4,13 +4,7 @@ import Post from "./Post/Post";
 
 const MyPosts = (props) => {
 
-    let pData = [
-        { id: 1, pMessage: 'test post', lokes: 3 },
-        { id: 1, pMessage: 'other post', lokes: 1 },
-        { id: 1, pMessage: 'more posts', lokes: 7 },
-    ]
-
-    let newArrPData = pData.map(post => <Post message={post.pMessage} like={post.lokes} />)
+    let newArrPData = props.post.map(post => <Post message={post.pMessage} like={post.lokes} />)
 
     return (
         <div className={s.posts}>
