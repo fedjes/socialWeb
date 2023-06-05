@@ -1,10 +1,13 @@
+import { rerenderApp } from "../../render";
+
 let state = {
     profilePage: {
         pData: [
             { id: 1, pMessage: 'test post', lokes: 3 },
-            { id: 1, pMessage: 'other post', lokes: 1 },
-            { id: 1, pMessage: 'more posts', lokes: 7 },
+            { id: 2, pMessage: 'other post', lokes: 1 },
+            { id: 3, pMessage: 'more posts', lokes: 7 },
           ],
+          newPostText: 'test',
     },
     messagesPage: {
         dData: [
@@ -18,7 +21,25 @@ let state = {
           { id: 2, message: 'ky' },
           { id: 3, message: 'what' },
       ],
+      
     }
+  };
+
+window.state = state;
+
+  export let addPost = () => {
+    let newPost = {
+      id: 4,
+      pMessage: state.profilePage.newPostText,
+      lokes: 0
+    };
+    state.profilePage.pData.push(newPost);
+    rerenderApp(state);
+  };
+
+  export let changePost = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderApp(state);
   };
 
   export default state;

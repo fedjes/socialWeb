@@ -15,14 +15,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 const App = (props) => {
 
   return (
-    <BrowserRouter>
+    
       <div className='appWrapper'>
         <Header />
         <NavBar />
         <div className='appWrapperContent'>
           <Routes>
             <Route path='/messages' element={<Dialogs state={props.state.messagesPage} />} />
-            <Route path='/profile' element={<Profile state={props.state.profilePage.pData} />} />
+            <Route path='/profile' element={<Profile state={props.state.profilePage} addPost={props.addPost} changePost={props.changePost} />} />
             <Route path='/music' element={<Music />} />
             <Route path='/friends' element={<Friends />} />
             <Route path='/news' element={<News />} />
@@ -30,7 +30,7 @@ const App = (props) => {
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    
   );
 }
 
