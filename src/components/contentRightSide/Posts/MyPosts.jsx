@@ -8,9 +8,7 @@ const MyPosts = (props) => {
     let newPostFragment = React.createRef();
 
     let addNewPost = () => {
-        
         props.addPost();
-        props.changePost('');
     };
 
     let onPostChange = () => {

@@ -5,7 +5,6 @@ import Message from "./Message/Message";
 
 
 const Dialogs = (props) => {
-debugger;
     let newArrDData = props.state.dData.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />)
     let newArrMData = props.state.mData.map(message => <Message message={message.message} />)
 
